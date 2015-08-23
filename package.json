@@ -1,9 +1,13 @@
 {
-    "name": "github-asana"
-  , "version": "0.0.1"
-  , "private": false
-  , "dependencies": {
-      "express": "2.5.8"
-    , "request": ">= 2.9.202"
+  "name": "github-asana",
+  "version": "0.0.1",
+  "private": false,
+  "dependencies": {
+    "body-parser": "^1.13.3",
+    "express": "2.5.8",
+    "request": ">= 2.9.202"
+  },
+  "engines": {
+    "node": "0.12.7"
   }
 }

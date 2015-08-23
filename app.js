@@ -3,6 +3,7 @@
  */
 
 var express = require('express')
+  , bodyParser = require('body-parser')
   , github_asana = require('./lib/github-asana');
 
 var app = module.exports = express.createServer();
@@ -10,7 +11,7 @@ var app = module.exports = express.createServer();
 // Configuration
 
 app.configure(function(){
-  app.use(express.bodyParser());
+  app.use(bodyParser.json());
   app.use(express.methodOverride());
   app.use(app.router);
 });
